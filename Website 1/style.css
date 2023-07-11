@@ -1,0 +1,385 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaf2f8; /* Light Blue */
+}
+
+header {
+  background-color: #fcdede; /* Light Pink */
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.content-section {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.content-section-3 {
+  width: calc(100% - 40px);
+  height: calc(100vh - 100px); /* Adjust the height as needed */
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+.content-section-4 {
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  height: 400px;
+  width: 100%;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.full-width-column {
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  max-width: 100%; /* Set the maximum width to the width of the parent container */
+  height: 200px; /* Adjust the height as needed */
+  width: 100%; /* Use percentage-based width */
+}
+
+.content-section-contact {
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  height: 600px; /* Adjust the height as needed */
+
+  /* Add properties for the column layout */
+  display: inline-block;
+  width: calc(33.33% - 20px); /* Adjust the width and margin as needed */
+  margin: 10px;
+  vertical-align: top;
+}
+
+.contact-description {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-info {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contact-info-support {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.5;
+
+}
+.content-section-contact-2 {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+#age {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: 0.5; }
+  50% { opacity: 1; }
+  75% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+  
+  #age.active {
+    animation: blink 2s infinite; /* Adjust the animation duration as desired */
+  }
+ /* First Page */
+ .image-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.image-container img {
+  width: 200px; /* Adjust the width as desired */
+  height: 200px; /* Adjust the height as desired */
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+  margin-right: 10px; /* Add some spacing between the images */
+}
+
+/* Second Page */
+.image-container-2 {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border-radius: 10px;
+}
+
+.image-container-2 .image-wrapper-2 {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center horizontally */
+  margin-bottom: 10px; /* Add margin to lower the images */
+}
+
+.image-container-2 img {
+  width: 200px; /* Adjust the width as desired */
+  height: 180px; /* Adjust the height as desired */
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+  margin-right: 10px; /* Add some spacing between the images */
+  border-radius: 10px;
+  margin-bottom: 2px; /* Add a bottom margin to lower the images */
+}
+
+.image-item {
+  text-align: center;
+  margin-bottom: 10px; /* Add some spacing between the image items */
+}
+
+.image-item img {
+  width: 200px; /* Adjust the width as desired */
+  height: 180px; /* Adjust the height as desired */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image-text-2 {
+  background-color: #f2f2f2; /* Set the background color of the name box */
+  padding: 5px 10px; /* Add some padding for the name box */
+  margin-top: 5px; /* Add some spacing between the image and name */
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px; /* Round the corners of the name box */
+}
+
+
+
+  .image-container-3 {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    image-rendering: smooth;
+    border-radius: 10px;
+  }
+  
+  .image-container-3 img {
+    width: 200px; /* Adjust the width as desired */
+    height: 200px; /* Adjust the height as desired */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    margin-right: 10px; /* Add some spacing between the images */
+    image-rendering: smooth;
+    border-radius: 10px;
+  }
+
+  .image-container-4 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    object-fit: contain;
+  }
+  
+  .image-container-4 img {
+    width: 500px; /* Adjust the width as desired */
+    height: 260px; /* Adjust the height as desired */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    margin-right: 10px; /* Add some spacing between the images */
+    align-items: center;
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .arrow-left {
+    left: 10px;
+  }
+  
+  .arrow-right {
+    right: 10px;
+  }
+
+  
+/* Hamburger menu styles */
+.menu-toggle-checkbox {
+  display: none;
+}
+
+.menu-toggle-label {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.menu-toggle-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle-checkbox:checked + .menu-toggle-label .menu-toggle-icon {
+  transform: rotate(45deg);
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: auto;
+  max-height: calc(100vh - 60px); /* Adjust the height as desired */
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9998;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.menu-toggle-checkbox:checked ~ .menu {
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+}
+
+.menu ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Style the menu items */
+.menu ul li a {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  background-color: #f0f0f0;
+}
+.golfbackground {
+  background-image: url('images/golfbg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.golfbackground h2 {
+  margin-top: 20px;
+}
+.body-2 {
+  background-image: url("images/sky.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body-3 {
+  background-image: url("images/sky.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.adventure-mila-1 {
+  font-size: 20px;
+  border: #333;
+  text-align: center;
+  font-weight: 400;
+}
+.adventure-mila-2 {
+  font-size: 20px;
+  border: #333;
+  text-align: center;
+  font-weight: 400;
+}
+.adventure-mila-3 {
+  font-size: 20px;
+  border: #333;
+  text-align: center;
+  font-weight: 400;
+}
+.adventure-mila-4 {
+  font-size: 20px;
+  border: #333;
+  text-align: center;
+  font-weight: 400;
+}
